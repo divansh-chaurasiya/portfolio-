@@ -1,0 +1,2 @@
+// script.js
+// Future JavaScript for interactivity can be added here.
