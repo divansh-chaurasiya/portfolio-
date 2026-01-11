@@ -1,75 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIVANSH - Portfolio</title>
+    <title>Divansh Chaurasiya - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <div class="background-animation">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
     <header>
-        <nav>
-            <div class="logo">DIVANSH</div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Divansh portfolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm DIVANSH</h1>
-                <p>A Passionate Web Developer</p>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Hi, I'm Divansh Chaurasiya</h1>
+                <h3><span id="typed-text">Computer Science Student</span></h3>
+                <p>I'm passionate about building beautiful and functional web applications. I'm always eager to learn new technologies and take on new challenges.</p>
+                <a href="#projects" class="btn">View My Work</a>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div classs="project-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                    <h3>Project One</h3>
-                    <p>A brief description of the first project. What it does, and what technologies were used.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                    <h3>Project Two</h3>
-                    <p>A brief description of the second project. What it does, and what technologies were used.</p>
-                    <a href="#">View Project</a>
-                </div>
-                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>Project Three</h3>
-                    <p>A brief description of the third project. What it does, and what technologies were used.</p>
-                    <a href="#">View Project</a>
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-info">
+                    <h3>My Story</h3>
+                    <p>I am BSc Computer Science student who is passionate about learning and growing in the field of technology. I enjoy creating projects, exploring new ideas, and continuously improving my problem-solving abilities. I believe in consistent learning, practical experience, and self-growth to prepare myself for a successful career in the tech industry.</p>
+                    
+                    <h3>Education</h3>
+                    <p><strong>Bachelor of Science in Computer Science</strong><br>Mumbai University, Thakur Shamnarayan Degree College, 2025 -2027</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me. I'm always open to discussing new projects or creative ideas.</p>
-            <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
+        <section id="skills" class="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-card"><i class="fas fa-file-code"></i><span>C++</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i><span>SQL</span></div>
+                <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="skill-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="html-css-js">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+                    <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/divansh-chaurasiya/portfolio-.git" class="btn-secondary" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card" data-category="react">
+                    <h3>Blog 1 Website</h3>
+                    <p>A full-stack blog website built with HTML, React and JavaScript.</p>
+                    <p class="tech-stack">Tech: HTML, React, JavaScript</p>
+                    <a href="https://github.com/divansh-chaurasiya/blog-webpage.git" class="btn-secondary" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card" data-category="html-css-js">
+                    <h3>Blog 2 Website</h3>
+                    <p>A blog website built with HTML, CSS, and JavaScript.</p>
+                    <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/divansh-chaurasiya/blog-2.git" class="btn-secondary" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <h2 class="section-title">My Resume</h2>
+            <p>You can download my resume to get a more detailed overview of my skills and experience.</p>
+            <a href="resume.pdf" class="btn" download>Download Resume <i class="fas fa-download"></i></a>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p class="form-message"></p>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/divansh-chaurasiya" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/divansh-chaurasiya-85867b393/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/divansh.24.3/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Divansh24" target="_blank"><i class="fab fa-twitter"></i></a>
+    
+
+        </div>
+        <p>&copy; 2026 Divansh Chaurasiya. All rights reserved.</p>
     </footer>
 
+    <div id="cookie-banner">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button id="cookie-accept-btn" class="btn">Accept</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
 </html>
